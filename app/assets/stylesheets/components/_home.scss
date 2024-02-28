@@ -1,0 +1,81 @@
+body{
+  background-color: #3F1740;
+  font-family: 'unna';
+}
+
+.banner{
+  height: 900px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+
+  h1{
+    color: #DDD8CB;
+    font-size: 120px;
+    letter-spacing: 40px;
+    position: absolute;
+    top: 73px;
+    left: 181px;
+    z-index: 2;
+  }
+
+  h2{
+    color: transparent;
+  -webkit-text-stroke: 0.6px #D7B63B;
+    font-size: 120px;
+    letter-spacing: 40px;
+    position: absolute;
+    top: 200px;
+    left: 181px;
+  }
+
+  h3{
+    color: transparent;
+  -webkit-text-stroke: 0.6px #D7B63B;
+    font-size: 120px;
+    letter-spacing: 40px;
+    position: absolute;
+    top: 322px;
+    left: 181px;
+  }
+
+  h4{
+    color: transparent;
+  -webkit-text-stroke: 0.6px #D7B63B;
+    font-size: 120px;
+    letter-spacing: 40px;
+    position: absolute;
+    top: 440px;
+    left: 181px;
+  }
+}
+
+.banner-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #3F1740;
+  color: #DDD8CB;
+  width: 237px;
+  height: 128px;
+  font-size: 28px;
+  position: absolute;
+  bottom: 369px;
+  right: 107px;
+  z-index: 1;
+
+  a{
+    color: #DDD8CB;
+    text-decoration: 1px underline;
+  }
+}
+
+.picture{
+  position: relative;
+  z-index: 1;
+}
