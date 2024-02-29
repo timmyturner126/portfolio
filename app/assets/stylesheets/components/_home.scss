@@ -1,54 +1,85 @@
 body{
-  background-color: #3F1740;
+  background-color: #4C214D;
   font-family: 'unna';
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .banner{
-  height: 900px;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   z-index: 100;
+  width: 1400px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 
   h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #DDD8CB;
-    font-size: 120px;
-    letter-spacing: 40px;
+    font-size: 158px;
+    letter-spacing: 70px;
     position: absolute;
-    top: 73px;
-    left: 181px;
+    top: 0px;
+    left: 25px;
     z-index: 2;
   }
 
   h2{
     color: transparent;
-  -webkit-text-stroke: 0.6px #D7B63B;
-    font-size: 120px;
-    letter-spacing: 40px;
+  -webkit-text-stroke: 0.8px #D7B63B;
+    font-size: 158px;
+    letter-spacing: 70px;
     position: absolute;
-    top: 200px;
-    left: 181px;
+    top: 179px;
+    left: 25px;
+    transition: color 0.3s;
   }
 
   h3{
     color: transparent;
-  -webkit-text-stroke: 0.6px #D7B63B;
-    font-size: 120px;
-    letter-spacing: 40px;
+  -webkit-text-stroke: 0.8px #D7B63B;
+    font-size: 158px;
+    letter-spacing: 70px;
     position: absolute;
-    top: 322px;
-    left: 181px;
+    top: 365px;
+    left: 25px;
+    transition: color 0.3s;
   }
 
   h4{
     color: transparent;
-  -webkit-text-stroke: 0.6px #D7B63B;
-    font-size: 120px;
-    letter-spacing: 40px;
+  -webkit-text-stroke: 0.8px #D7B63B;
+    font-size: 158px;
+    letter-spacing: 70px;
     position: absolute;
-    top: 440px;
-    left: 181px;
+    top: 550px;
+    left: 25px;
+    transition: color 0.3s;
   }
 }
 
@@ -59,14 +90,14 @@ body{
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
-  background-color: #3F1740;
+  background-color: #4C214D;
   color: #DDD8CB;
-  width: 237px;
-  height: 128px;
+  width: 245px;
+  height: 193px;
   font-size: 28px;
   position: absolute;
-  bottom: 369px;
-  right: 107px;
+  bottom: 71px;
+  right: 16px;
   z-index: 1;
 
   a{
@@ -78,4 +109,41 @@ body{
 .picture{
   position: relative;
   z-index: 1;
+}
+
+.top-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 8px;
+  margin-bottom: 250px;
+}
+
+.description-container{
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  width: 100vw;
+  background-color: #141414;
+  padding-left: 134px;
+  padding-right: 134px;
+
+  color:#DDD8CB;
+  height: 350px;
+  bottom: -263px;
+
+  .description{
+    font-size: 24px;
+    word-wrap: break-word;
+    width: 500px;
+    height: auto;
+    padding: 8px;
+  }
+}
+
+.about{
+  margin: 50px;
 }

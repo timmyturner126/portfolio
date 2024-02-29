@@ -1,33 +1,37 @@
 <div class="container">
   <div class="content-container">
-    <div class="banner">
-      <h1>PORTFOLIO</h1>
-      <h2>PORTFOLIO</h2>
-      <h3>PORTFOLIO</h3>
-      <h4>PORTFOLIO</h4>
-      <p class="banner-info">
-        <a href="https://github.com/timmyturner126">GitHub</a>
-        <span> | </span>
-        <a href="https://www.linkedin.com/in/timeea-samoila/">LinkedIn</a>
-      </p>
-      <div class="picture">
-        <%= image_tag "pic.jpg", alt: "My picture", width: 480, height: 600 %>
+    <div class="top-container">
+      <div class="banner">
+        <h1>PORTFOLIO</h1>
+        <h2>PORTFOLIO</h2>
+        <h3>PORTFOLIO</h3>
+        <h4>PORTFOLIO</h4>
+        <p class="banner-info">
+          <a href="https://github.com/timmyturner126">GitHub</a>
+          <span> | </span>
+          <a href="https://www.linkedin.com/in/timeea-samoila/">LinkedIn</a>
+        </p>
+        <div class="picture">
+          <%= image_tag "pic.jpg", alt: "My picture", width: 560, height: 725 %>
+        </div>
       </div>
-      <p class="description"> I am a full-stack web developer, with a passion for marketing and creating beautiful and functional websites. </p>
+      <div class="description-container">
+        <p class="description">
+          I'm a dynamic Junior Full Stack Web Developer with a keen interest in marketing. With previous experience in PR, I excel in engaging audiences and promoting initiatives. I approach coding and marketing with equal passion, infusing creativity into every project.</p>
+      </div>
+    </div>
+    <div class="about">
+      <h2>Hello, I'm Timeea!</h2>
+      <p>I'm an enthusiastic Junior Full Stack Web Developer with a knack for sales and a genuine love for marketing. I've got some experience under my belt as a Communication Manager for a student association, where I honed my skills in spreading the word and engaging with audiences. I bring creativity and energy to everything I do, whether it's coding up a storm or brainstorming the next big marketing campaign. </p>
+      <button class="btn btn-warning button-primary"></button>
     </div>
 
-        <div class="about">
-            <h2>Hello, I'm Timeea!</h2>
-            <p>I'm an enthusiastic Junior Full Stack Web Developer with a knack for sales and a genuine love for marketing. I've got some experience under my belt as a Communication Manager for a student association, where I honed my skills in spreading the word and engaging with audiences. I bring creativity and energy to everything I do, whether it's coding up a storm or brainstorming the next big marketing campaign. </p>
-            <button class="btn btn-warning button-primary">
-        </div>
-
-        <section class="cards">
-            <h2>My Projects</h2>
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-            </div>
+    <section class="cards">
+      <h2>My Projects</h2>
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+      </div>
             <div class="card">
                 <h3>Project 2</h3>
                 <p>Description of Project 2</p>
@@ -40,7 +44,7 @@
 
         <section class="contact">
             <h2>Contact Me</h2>
-            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <form action="mailto:timeeasamoila12@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label><br>
