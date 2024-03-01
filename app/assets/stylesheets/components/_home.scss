@@ -128,9 +128,9 @@ body{
   position: absolute;
   width: 100vw;
   background-color: #141414;
-  padding-left: 134px;
-  padding-right: 134px;
-
+  padding-left: 224px;
+  padding-right: 224px;
+  padding-bottom: 16px;
   color:#DDD8CB;
   height: 350px;
   bottom: -263px;
@@ -144,6 +144,189 @@ body{
   }
 }
 
-.about{
-  margin: 50px;
+.about-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8px;
+  margin-bottom: 50px;
+  background-color: #DDD8CB;
+  width: 200vh;
+  padding-left: 224px;
+  padding-right: 224px;
+
+  .about{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+      font-size: 50px;
+      padding: 8px;
+    }
+
+    p{
+      font-size: 24px;
+      word-wrap: break-word;
+      width: 500px;
+      height: auto;
+      padding: 8px;
+    }
+  }
+
+  .button-primary{
+    padding: 8px;
+  }
+
+  .journey-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .journey-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 16px;
+    padding: 16px;
+    padding-left: 24px;
+    width: 100%;
+    background-color: #4C214D;
+    color:#DDD8CB;
+    border-radius: 80px;
+
+    p{
+      padding: 8px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .journey-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 16px;
+    padding: 16px;
+    padding-left: 24px;
+    width: 100%;
+    background-color: #4C214D;
+    color:#DDD8CB;
+    border-radius: 80px;
+
+    p{
+      padding: 8px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .journey-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 16px;
+    padding: 16px;
+    width: 100%;
+    padding-left: 24px;
+    background-color: #4C214D;
+    color:#DDD8CB;
+    border-radius: 80px;
+
+    p{
+      padding: 8px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .journey-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 16px;
+    padding: 16px;
+    width: 100%;
+    padding-left: 24px;
+    background-color: #4C214D;
+    color:#DDD8CB;
+    border-radius: 80px;
+
+    p{
+      padding: 8px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  margin-bottom: 32px;
+  width: 100%;
+
+  h2{
+    font-size: 50px;
+    padding: 16px;
+    color: #DDD8CB;
+  }
+
+  .project-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    width: 100%;
+    background-color: #DDD8CB;
+    color:#141414;
+    border-radius: 80px;
+
+    h3{
+      font-size: 40px;
+      padding: 8px;
+    }
+
+    p{
+      font-size: 24px;
+      word-wrap: break-word;
+      width: 500px;
+      height: auto;
+      padding: 8px;
+    }
+
+    .button-primary{
+      padding: 8px;
+    }
+  }
 }

@@ -17,30 +17,107 @@
       </div>
       <div class="description-container">
         <p class="description">
-          I'm a dynamic Junior Full Stack Web Developer with a keen interest in marketing. With previous experience in PR, I excel in engaging audiences and promoting initiatives. I approach coding and marketing with equal passion, infusing creativity into every project.</p>
+          I'm blending business smarts with coding flair. From sales and marketing to full-stack skills, I bring sunshine, creativity and versatility to the table. Ready to code and collaborate!
+        </p>
       </div>
-    </div>
-    <div class="about">
-      <h2>Hello, I'm Timeea!</h2>
-      <p>I'm an enthusiastic Junior Full Stack Web Developer with a knack for sales and a genuine love for marketing. I've got some experience under my belt as a Communication Manager for a student association, where I honed my skills in spreading the word and engaging with audiences. I bring creativity and energy to everything I do, whether it's coding up a storm or brainstorming the next big marketing campaign. </p>
-      <button class="btn btn-warning button-primary"></button>
     </div>
 
-    <section class="cards">
-      <h2>My Projects</h2>
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
+    <div class="about-container">
+      <div class="about">
+        <h2>Hello, I'm Timeea!</h2>
+        <p>I'm a dynamic Junior Full Stack Web Developer with a keen interest in marketing. As a former Communication Manager for a student association, I excel in engaging audiences and promoting initiatives. I approach coding and marketing with equal passion, infusing creativity into every project. So, what's left, is for us to connect!</p>
+        <button class="button-primary" a href="https://www.linkedin.com/in/timeea-samoila/">See LinkedIn</button>
       </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
+      <div class="journey-container">
+        <div class="buttons-container">
+          <button class="button-secondary" id="show-education-btn">See Education</button>
+          <button class="button-secondary" id="show-experience-btn">See Experience</button>
+        </div>
+        <div class="hidden" id="education">
+            <div class="journey-1">
+              <p>2023-2024</p>
+              <h3>Le Wagon - Web Development Bootcamp</h3>
             </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
+            <div class="journey-2">
+              <p>2022-2023</p>
+              <h3>Kanagawa University - International Business</h3>
             </div>
-        </section>
+            <div class="journey-3">
+              <p>2020-2023</p>
+              <h3>Lucian Blaga University - Business Administration</h3>
+            </div>
+        </div>
+        <div class="hidden" id="experience">
+            <div class="journey-1">
+              <p>02/2022 - 09/2022</p>
+              <h3>Communication Manager</h3>
+              <p>Erasmus Student Network</p>
+              <ul>
+                <li>Created engaging content for online platforms like social media, while also coordinating traditional marketing efforts such as print materials, event promotions, and direct mail campaigns</li>
+                <li>Documented national events and helped students in need</li>
+              </ul>
+            </div>
+            <div class="journey-2">
+              <p>03/2022 - 06/2022</p>
+              <h3>Administration Intern</h3>
+              <p>Matec Cnc Technik</p>
+              <ul>
+                <li>Learned the attributions, tasks and correlation between multiple departments</li>
+                <li>Worked on administration and HR tasks with the people in charge </li>
+              </ul>
+            </div>
+            <div class="journey-3">
+              <p>10/2021 - 02/2022</p>
+              <h3>Advertising Sales Agent</h3>
+              <p>Mobiup Distribution</p>
+              <ul>
+                <li>Promoted mid-range phone services and products through in-store marketing initiatives, including visual merchandising, product displays and promotional events</li>
+                <li>Operations management for the assigned location</li>
+              </ul>
+            </div>
+            <div class="journey-4">
+              <p>01/2021 - 09/2021</p>
+              <h3>Purchasing Intern</h3>
+              <p>Continental Automotive Products SRL</p>
+              <ul>
+                <li>Assisted the purchasing department with various tasks, including data entry, market research, and registering materials</li>
+                <li>Handled the materials registered in the system either from the main manufacturer or from suppliers with SAP</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+     document.getElementById('show-education-btn').addEventListener('click', function() {
+      document.getElementById('education').classList.add('visible');
+      document.getElementById('education').classList.remove('hidden');
+      document.getElementById('experience').classList.add('hidden');
+      document.getElementById('experience').classList.remove('visible');
+    });
+
+    document.getElementById('show-experience-btn').addEventListener('click', function() {
+      document.getElementById('education').classList.add('hidden');
+      document.getElementById('education').classList.remove('visible');
+      document.getElementById('experience').classList.add('visible');
+      document.getElementById('experience').classList.remove('hidden');
+    });
+    </script>
+
+    <div class="cards">
+      <h2>My Projects</h2>
+        <div class="project-cards">
+          <div class="card">
+            <h3>ToolBnb</h3>
+            <p>A tool renting app to find different tools in your area</p>
+            <button class="button-primary">See project</button>
+          </div>
+          <div class="card">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+            <button class="button-primary">See project</button>
+          </div>
+        </div>
+    </div>
 
         <section class="contact">
             <h2>Contact Me</h2>
