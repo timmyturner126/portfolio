@@ -106,29 +106,65 @@
     <div class="cards">
       <h2>My Projects</h2>
         <div class="project-cards">
-          <div class="card">
-            <h3>ToolBnb</h3>
-            <p>A tool renting app to find different tools in your area</p>
-            <button class="button-primary">See project</button>
+          <div class="links">
+            
           </div>
           <div class="card">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-            <button class="button-primary">See project</button>
+            <h3>ToolBnb</h3>
+            <p>Don't we all need sometimes some arts and crafts tools that we will never use again? With ToolBnb, you can rent tools in your area without having to care ever again about storing or buying something you will never use again. Reserve tools or lend them yourself. Reviews later on.</p>
+            <h3>Stacks</h3>
+              <div class="stacks">
+               <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
+              </div>
+          </div>
+          <div class="card">
+            <h3>Furry Friend</h3>
+            <p>Imagine charity as a game. Not all pets get the same love at shelters, but we can change that. That's how FurryFriend was born. You adopt a digital pet, that has the same needs as a real one: they need food, healthcare and toys to keep them busy. Everything you buy for your digital pet, goes to your selected shelter.</p>
+            <h3>Stacks</h3>
+              <div class="stacks">
+               <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
+              </div>
           </div>
         </div>
     </div>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <form action="mailto:timeeasamoila12@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <input type="submit" value="Send">
-            </form>
-        </section>
+
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <p>Let's connect and create something amazing together. Whether you have a question or just want to say hi, I'd love to hear from you!</p>
+        <div class="contact-container">
+          <form action="mailto:timeeasamoila12@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Send" class="button-primary">
+          </form>
+      </div>
+    </div>
+  </div>
 </div>

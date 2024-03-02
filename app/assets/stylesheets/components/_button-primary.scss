@@ -15,9 +15,9 @@
 }
 
 .button-primary {
-  border: 2px solid #D7B63B;
+  border: 2px solid #c7a62e;
   z-index: 1;
-  color: #D7B63B;
+  color: #c7a62e;
 }
 
 .button-primary:after {
@@ -28,7 +28,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: #D7B63B;
+  background: #c7a62e;
   transition: all 0.3s ease;
   border-radius: 30px;
 }
