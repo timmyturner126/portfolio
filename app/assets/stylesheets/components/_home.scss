@@ -146,7 +146,7 @@ body{
 
 .about-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   align-content: flex-start;
@@ -158,6 +158,14 @@ body{
   padding-left: 224px;
   padding-right: 224px;
 
+  .first-about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 8px;
+  }
   .about{
     margin: 50px;
     display: flex;
@@ -366,12 +374,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .button-primary{
-    padding: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
   }
 
   .contact-container{
@@ -385,4 +395,35 @@ body{
     height: 100%;
 
   }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 8px;
+  padding: 16px;
+}
+
+label {
+  display: block;
+  font-size: 24px;
+  color:#DDD8CB
+}
+
+input,
+textarea {
+  width: 750px;
+  padding: 8px;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+  background-color: #DDD8CB;
+  border-radius: 24px;
+  font-size: 24px;
+}
+
+textarea {
+  resize: vertical;
+  grid-column: 1 / 3;
 }
