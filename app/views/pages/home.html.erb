@@ -7,9 +7,9 @@
         <h3>PORTFOLIO</h3>
         <h4>PORTFOLIO</h4>
         <p class="banner-info">
-          <a href="https://github.com/timmyturner126">GitHub</a>
+          <a href="https://github.com/timmyturner126" target="_blank">GitHub</a>
           <span> | </span>
-          <a href="https://www.linkedin.com/in/timeea-samoila/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">LinkedIn</a>
         </p>
         <div class="picture">
           <%= image_tag "pic.jpg", alt: "My picture", width: 560, height: 725 %>
@@ -26,8 +26,8 @@
       <div class="first-about-container">
         <div class="about">
           <h2>Hello, I'm Timeea!</h2>
-          <p>I'm a dynamic Junior Full Stack Web Developer with a keen interest in marketing. As a former Communication Manager for a student association, I excel in engaging audiences and promoting initiatives. I approach coding and marketing with equal passion, infusing creativity into every project. So, what's left, is for us to connect!</p>
-          <button class="button-primary" a href="https://www.linkedin.com/in/timeea-samoila/">See LinkedIn</button>
+          <p>I'm a 22-year-old from Sibiu, Romania, currently based in Germany and interested in the tech scene. As a former Communication Manager for a student association, I've mastered the art of engaging audiences and driving initiatives. Recently, I graduated from <a href="https://www.lewagon.com/" target="_blank">Le Wagon coding BootCamp</a>, where I combined my skills in both coding and marketing, blending my passions seamlessly. Now armed with a fresh perspective and a dynamic skill set, I'm eager to explore new opportunities and push boundaries in the digital world. So, what's left, is for us to connect!</p>
+          <button class="button-primary" a href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">See LinkedIn</button>
         </div>
         <div class="journey-container">
           <div class="buttons-container">
@@ -91,7 +91,134 @@
       <div class="second-about-container">
         <div class="about-me">
           <h2>A personal touch</h2>
-          <p></p>
+          <div class="passions">
+            <div class="hobbies">
+              <h3>Hobbies & Interests</h3>
+                <div class="hobbies-container">
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ihajlcqd.json"
+                        trigger="hover"
+                        colors="primary:#320a5c,secondary:#f2e2d9,tertiary:#ffc738"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Japanese culture</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/fjcesatc.json"
+                        trigger="hover"
+                        colors="primary:#242424,secondary:#320a5c,tertiary:#646e78"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Video games</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yskcrbda.json"
+                        trigger="hover"
+                        colors="primary:#242424,secondary:#c67d53,tertiary:#e4e4e4,quaternary:#320a5c"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Pets</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xdvsfbna.json"
+                        trigger="hover"
+                        colors="primary:#a866ee,secondary:#f49cc8,tertiary:#ffc738,quaternary:#646e78,quinary:#3a3347"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Dancing</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/egmlnyku.json"
+                        trigger="hover"
+                        colors="primary:#320a5c,secondary:#e3c0ac,tertiary:#320a5c,quaternary:#ebe6ef"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Learning languages</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/iikoxwld.json"
+                        trigger="hover"
+                        state="hover-jump-roll"
+                        colors="primary:#320a5c"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Traveling</p>
+                  </div>
+              </div>
+            </div>
+            <div class="languages">
+              <h3>Languages</h3>
+              <div class="languages-container">
+                <div class="language">
+                  <p>Romanian</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 100%"></div>
+                    <span id="progress-percentage">100%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>English</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 100%"></div>
+                    <span id="progress-percentage">100%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>Spanish</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 60%"></div>
+                    <span id="progress-percentage">60%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>Japanese</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 40%"></div>
+                    <span id="progress-percentage">40%</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="skills-stacks">
+            <h2>Skills & Stacks</h2>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <div class="stack-cards">
+              <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "github.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "react.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "stimulus.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "canva.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "MP.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -174,5 +301,20 @@
       document.getElementById('education').classList.remove('visible');
       document.getElementById('experience').classList.add('visible');
       document.getElementById('experience').classList.remove('hidden');
+    });
+
+    document.querySelectorAll('a').forEach(function(link) {
+    link.setAttribute('target', '_blank');
+    });
+
+    $(document).ready(function(){
+    $('.stack-cards').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      draggable: true,
+      arrows: false,
+      pauseOnHover: false,
+      pauseOnFocus: false
+      });
     });
     </script>
