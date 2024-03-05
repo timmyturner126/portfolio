@@ -6,11 +6,13 @@
         <h2>PORTFOLIO</h2>
         <h3>PORTFOLIO</h3>
         <h4>PORTFOLIO</h4>
-        <p class="banner-info">
+        <img class="star" src="<%= image_path('star.png') %>" alt="star">
+        <img class="star1" src="<%= image_path('star.png') %>" alt="star">
+        <div class="banner-info">
           <a href="https://github.com/timmyturner126" target="_blank">GitHub</a>
           <span> | </span>
           <a href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">LinkedIn</a>
-        </p>
+        </div>
         <div class="picture">
           <%= image_tag "pic.jpg", alt: "My picture", width: 560, height: 725 %>
         </div>
@@ -22,12 +24,13 @@
       </div>
     </div>
 
-    <div class="about-container">
+    <div class="about-container" id="about-container">
       <div class="first-about-container">
         <div class="about">
+          <img class="messy" src="<%= image_path('messy.png') %>" alt="messy">
           <h2>Hello, I'm Timeea!</h2>
           <p>I'm a 22-year-old from Sibiu, Romania, currently based in Germany and interested in the tech scene. As a former Communication Manager for a student association, I've mastered the art of engaging audiences and driving initiatives. Recently, I graduated from <a href="https://www.lewagon.com/" target="_blank">Le Wagon coding BootCamp</a>, where I combined my skills in both coding and marketing, blending my passions seamlessly. Now armed with a fresh perspective and a dynamic skill set, I'm eager to explore new opportunities and push boundaries in the digital world. So, what's left, is for us to connect!</p>
-          <button class="button-primary" a href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">See LinkedIn</button>
+          <a class="button-primary" href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">See LinkedIn</a>
         </div>
         <div class="journey-container">
           <div class="buttons-container">
@@ -89,6 +92,8 @@
         </div>
       </div>
       <div class="second-about-container">
+        <img class="wave" src="<%= image_path('wave.png') %>" alt="wave">
+        <img class="peace" src="<%= image_path('peace.png') %>" alt="peace">
         <div class="about-me">
           <h2>A personal touch</h2>
           <div class="passions">
@@ -100,7 +105,7 @@
                     <lord-icon
                         src="https://cdn.lordicon.com/ihajlcqd.json"
                         trigger="hover"
-                        colors="primary:#320a5c,secondary:#f2e2d9,tertiary:#ffc738"
+                        colors="primary:#4C214D,secondary:#f2e2d9,tertiary:#ffc738"
                         style="width:150px;height:150px">
                     </lord-icon>
                     <p>Japanese culture</p>
@@ -110,7 +115,7 @@
                     <lord-icon
                         src="https://cdn.lordicon.com/fjcesatc.json"
                         trigger="hover"
-                        colors="primary:#242424,secondary:#320a5c,tertiary:#646e78"
+                        colors="primary:#242424,secondary:#320a5c,tertiary:#4C214D"
                         style="width:150px;height:150px">
                     </lord-icon>
                     <p>Video games</p>
@@ -120,7 +125,7 @@
                     <lord-icon
                         src="https://cdn.lordicon.com/yskcrbda.json"
                         trigger="hover"
-                        colors="primary:#242424,secondary:#c67d53,tertiary:#e4e4e4,quaternary:#320a5c"
+                        colors="primary:#242424,secondary:#c67d53,tertiary:#e4e4e4,quaternary:#4C214D"
                         style="width:150px;height:150px">
                     </lord-icon>
                     <p>Pets</p>
@@ -140,7 +145,7 @@
                     <lord-icon
                         src="https://cdn.lordicon.com/egmlnyku.json"
                         trigger="hover"
-                        colors="primary:#320a5c,secondary:#e3c0ac,tertiary:#320a5c,quaternary:#ebe6ef"
+                        colors="primary:#4C214D,secondary:#e3c0ac,tertiary:#4C214D,quaternary:#ebe6ef"
                         style="width:150px;height:150px">
                     </lord-icon>
                     <p>Learning languages</p>
@@ -151,7 +156,7 @@
                         src="https://cdn.lordicon.com/iikoxwld.json"
                         trigger="hover"
                         state="hover-jump-roll"
-                        colors="primary:#320a5c"
+                        colors="primary:#4C214D"
                         style="width:150px;height:150px">
                     </lord-icon>
                     <p>Traveling</p>
@@ -195,41 +200,40 @@
 
           <div class="skills-stacks">
             <h2>Skills & Stacks</h2>
-            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <div class="stack-cards">
-              <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "github.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "react.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "stimulus.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "canva.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "MP.png", alt: "stack", width: 96, height: 142 %>
-               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+              <%= image_tag "ruby.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "github.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "JS.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sql.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "react.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "stimulus.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "canva.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "html.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "css.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sass.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "figma.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vue.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "git.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "MP.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vs.png", alt: "stack", width: 140, height: 208 %>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="cards">
+    <div class="cards" id="cards-projects">
       <h2>My Projects</h2>
         <div class="project-cards">
           <div class="links">
 
           </div>
           <div class="card">
+            <a class="link fas fa-link" href="https://toolbnb-mick-clo-131e0f01c31e.herokuapp.com/" target="_blank"></a>
+            <a class="git fab fa-github" href="https://github.com/Mick-clo/ToolBnB" target="_blank"></a>
             <h3>ToolBnb</h3>
             <p>Don't we all need sometimes some arts and crafts tools that we will never use again? With ToolBnb, you can rent tools in your area without having to care ever again about storing or buying something you will never use again. Reserve tools or lend them yourself. Reviews later on.</p>
             <h3>Stacks</h3>
@@ -249,6 +253,8 @@
               </div>
           </div>
           <div class="card">
+            <a class="link fas fa-link" href="https://www.furry-friend.me/" target="_blank"></a>
+            <a class="git fab fa-github" href="https://github.com/Mick-clo/Furry-Friends" target="_blank"></a>
             <h3>Furry Friend</h3>
             <p>Imagine charity as a game. Not all pets get the same love at shelters, but we can change that. That's how FurryFriend was born. You adopt a digital pet, that has the same needs as a real one: they need food, healthcare and toys to keep them busy. Everything you buy for your digital pet, goes to your selected shelter.</p>
             <h3>Stacks</h3>
@@ -271,7 +277,7 @@
     </div>
 
 
-    <div class="contact">
+    <div class="contact" id="contact">
       <h2>Get in touch!</h2>
       <p>Let's connect and create something amazing together. Whether you have a question or just want to say hi, I'd love to hear from you!</p>
         <div class="contact-container">
@@ -303,18 +309,45 @@
       document.getElementById('experience').classList.remove('hidden');
     });
 
-    document.querySelectorAll('a').forEach(function(link) {
-    link.setAttribute('target', '_blank');
+    const container = document.querySelector('.skills-stacks');
+    const cards = document.querySelector('.stack-cards');
+
+    /* keep track of user's mouse position */
+    let isPressedDown = false;
+    let cursorXSpace;
+
+    container.addEventListener('mousedown', (e) => {
+      isPressedDown = true;
+      cursorXSpace = e.offsetX - cards.offsetLeft;
+      container.style.cursor = 'grabbing';
     });
 
-    $(document).ready(function(){
-    $('.stack-cards').slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
-      draggable: true,
-      arrows: false,
-      pauseOnHover: false,
-      pauseOnFocus: false
-      });
+    container.addEventListener('mouseup', () => {
+      container.style.cursor = 'grab';
     });
+
+    window.addEventListener('mouseup', () => {
+      isPressedDown = false;
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isPressedDown) return; // Corrected here
+      e.preventDefault();
+      cards.style.left = `${e.offsetX - cursorXSpace}px`;
+      boundCards();
+    });
+
+    function boundCards() {
+      const containerRect = container.getBoundingClientRect();
+      const cardsRect = cards.getBoundingClientRect();
+
+       if (parseInt(cards.style.left) > 10) {
+      cards.style.left = '10px';
+      } else if (cardsRect.right < containerRect.right) {
+      cards.style.left = `-${cardsRect.width - containerRect.width}px`;
+      }
+    }
+
     </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

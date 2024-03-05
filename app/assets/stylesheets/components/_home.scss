@@ -51,7 +51,7 @@ body{
 
   h2{
     color: transparent;
-  -webkit-text-stroke: 0.8px #D7B63B;
+    -webkit-text-stroke: 0.8px #D7B63B;
     font-size: 158px;
     letter-spacing: 70px;
     position: absolute;
@@ -62,7 +62,7 @@ body{
 
   h3{
     color: transparent;
-  -webkit-text-stroke: 0.8px #D7B63B;
+    -webkit-text-stroke: 0.8px #D7B63B;
     font-size: 158px;
     letter-spacing: 70px;
     position: absolute;
@@ -73,13 +73,31 @@ body{
 
   h4{
     color: transparent;
-  -webkit-text-stroke: 0.8px #D7B63B;
+    -webkit-text-stroke: 0.8px #D7B63B;
     font-size: 158px;
     letter-spacing: 70px;
     position: absolute;
     top: 550px;
     left: 25px;
     transition: color 0.3s;
+  }
+
+  .star{
+    position: absolute;
+    top: -46px;
+    left: -25px;
+    width: 120px;
+    height: 150px;
+    z-index: 5;
+  }
+
+  .star1{
+    position: absolute;
+    bottom: -70px;
+    left: 500px;
+    width: 120px;
+    height: 150px;
+    z-index: 5;
   }
 }
 
@@ -98,11 +116,12 @@ body{
   position: absolute;
   bottom: 71px;
   right: 16px;
-  z-index: 1;
+
 
   a{
     color: #DDD8CB;
     text-decoration: 1px underline;
+
   }
 }
 
@@ -110,6 +129,7 @@ body{
   position: relative;
   z-index: 1;
 }
+
 
 .top-container{
   position: relative;
@@ -151,6 +171,7 @@ body{
   align-items: flex-start;
   align-content: flex-start;
   margin: 8px;
+  margin-left: 0;
   margin-bottom: 50px;
   background-color: #DDD8CB;
   width: 200vh;
@@ -167,6 +188,7 @@ body{
     margin: 8px;
   }
   .about{
+    position: relative;
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -174,6 +196,7 @@ body{
     h2{
       font-size: 50px;
       padding: 8px;
+      z-index: 1;
     }
 
     p{
@@ -182,11 +205,36 @@ body{
       width: 500px;
       height: auto;
       padding: 8px;
+      z-index: 1;
+    }
+
+    .button-primary{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      padding: 8px;
+      text-decoration: none;
+    }
+
+    .button-primary:hover{
+      color: #4C214D;
     }
 
     a{
       color: #c7a62e;
       text-decoration: 1px underline;
+    }
+
+
+    .messy{
+      position: absolute;
+      top: -53px;
+      left: 155px;
+      width: 262px;
+      height: 168px;
+      z-index: 0;
+      transform: rotate(15deg);
     }
   }
 
@@ -211,12 +259,18 @@ body{
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
+    transition: background-color 0.3s;
 
     p{
       padding: 8px;
       padding-bottom: 0;
       margin-bottom: 0;
     }
+  }
+
+  .journey-1:hover {
+    background-color: #D7B63B;
+    color: #4C214D;
   }
 
   .journey-2{
@@ -230,12 +284,18 @@ body{
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
+    transition: background-color 0.3s;
 
     p{
       padding: 8px;
       padding-bottom: 0;
       margin-bottom: 0;
     }
+  }
+
+  .journey-2:hover {
+    background-color: #D7B63B;
+    color: #4C214D;
   }
 
   .journey-3{
@@ -249,12 +309,18 @@ body{
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
+    transition: background-color 0.3s;
 
     p{
       padding: 8px;
       padding-bottom: 0;
       margin-bottom: 0;
     }
+  }
+
+  .journey-3:hover {
+    background-color: #D7B63B;
+    color: #4C214D;
   }
 
   .journey-4{
@@ -268,12 +334,18 @@ body{
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
+    transition: background-color 0.3s;
 
     p{
       padding: 8px;
       padding-bottom: 0;
       margin-bottom: 0;
     }
+  }
+
+  .journey-4:hover {
+    background-color: #D7B63B;
+    color: #4C214D;
   }
 }
 
@@ -295,10 +367,27 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   width: 100%;
   margin: 8px;
   margin-bottom: 50px;
   padding: 16px;
+
+  .wave{
+    position: absolute;
+    top: 80px;
+    left: -60px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .peace{
+    position: absolute;
+    bottom: 373px;
+    right: -55px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .about-me{
@@ -364,6 +453,27 @@ body{
   }
 }
 
+.skills-stacks{
+  overflow: hidden;
+  position: relative;
+  width: 72vw;
+  height: 400px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 16px;
+}
+
+.stack-cards{
+  position:absolute;
+  top: 140px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(18, 132px);
+  grid-gap: 32px;
+  margin: 16px;
+  pointer-events: none;
+}
+
 .cards{
   display: flex;
   flex-direction: column;
@@ -401,6 +511,15 @@ body{
     background-color: #DDD8CB;
     color:#141414;
     border-radius: 80px;
+    position: relative;
+    transform: translateY(0); /* Reset the transform property */
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Move the element up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0.2, 0, 0.2);
+  }
 
     h3{
       font-size: 40px;
@@ -418,6 +537,26 @@ body{
     .button-primary{
       padding: 8px;
     }
+
+    .link{
+      font-size: 40px;
+      padding: 8px;
+      position: absolute;
+      top: 16px;
+      right: 80px;
+      color: #4C214D;
+      text-decoration: none;
+    }
+
+    .git{
+      font-size: 40px;
+      padding: 8px;
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      color: #4C214D;
+      text-decoration: none;
+    }
   }
 
   .stacks{
@@ -426,6 +565,49 @@ body{
     grid-gap: 16px;
     padding: 16px;
   }
+
+.languages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  padding: 16px;
+  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
+
+  h3{
+    font-size: 40px;
+    padding: 16px;
+  }
+
+  p{
+    font-size: 24px;
+    padding: 8px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .language{
+    margin: 16px;
+  }
+
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+
+}
+
+.progress-bar::after {
+  position: absolute;
+}
+
+.progress{
+  background-color: #4C214D;
+
 }
 
 .contact{
@@ -504,43 +686,4 @@ textarea {
 textarea {
   resize: vertical;
   grid-column: 1 / 3;
-}
-
-.languages{
-  display: flex;
-  flex-direction: column;
-  margin: 16px;
-  padding: 16px;
-  height: 100%;
-  padding-top: 0;
-  margin-top: 0;
-
-  h3{
-    font-size: 40px;
-    padding: 16px;
-  }
-
-  p{
-    font-size: 24px;
-    padding: 8px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-}
-.progress-bar {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 8px;
-
-}
-
-.progress-bar::after {
-  position: absolute;
-}
-
-.progress{
-  background-color: #4C214D;
-
 }
