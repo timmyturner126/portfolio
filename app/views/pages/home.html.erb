@@ -331,7 +331,7 @@
     });
 
     container.addEventListener('mousemove', (e) => {
-      if (!isPressedDown) return; // Corrected here
+      if (!isPressedDown) return;
       e.preventDefault();
       cards.style.left = `${e.offsetX - cursorXSpace}px`;
       boundCards();
