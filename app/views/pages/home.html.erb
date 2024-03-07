@@ -1,0 +1,402 @@
+<div class="container">
+  <div class="content-container">
+    <div class="top-container">
+      <div class="banner">
+        <h1>PORTFOLIO</h1>
+        <h2>PORTFOLIO</h2>
+        <h3>PORTFOLIO</h3>
+        <h4>PORTFOLIO</h4>
+        <img class="star" src="<%= image_path('star.png') %>" alt="star">
+        <img class="star1" src="<%= image_path('star.png') %>" alt="star">
+        <div class="banner-info">
+          <a href="https://github.com/timmyturner126" target="_blank">GitHub</a>
+          <span> | </span>
+          <a href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="picture">
+          <%= image_tag "pic.jpg", alt: "My picture", width: 560, height: 725 %>
+        </div>
+      </div>
+      <div class="description-container">
+        <p class="description">
+          I'm blending business smarts with coding flair. From sales and marketing to full-stack skills, I bring sunshine, creativity and versatility to the table. Ready to code and collaborate!
+        </p>
+      </div>
+    </div>
+
+    <div class="about-container" id="about-container">
+      <div class="first-about-container">
+        <div class="about">
+          <img class="messy" src="<%= image_path('messy.png') %>" alt="messy">
+          <h2>Hello, I'm Timeea!</h2>
+          <p>I'm a 22-year-old from Sibiu, Romania, currently based in Germany and interested in the tech scene. As a former Communication Manager for a student association, I've mastered the art of engaging audiences and driving initiatives. Recently, I graduated from <a href="https://www.lewagon.com/" target="_blank">Le Wagon coding BootCamp</a>, where I combined my skills in both coding and marketing, blending my passions seamlessly. Now armed with a fresh perspective and a dynamic skill set, I'm eager to explore new opportunities and push boundaries in the digital world. So, what's left, is for us to connect!</p>
+          <a class="button-primary" href="https://www.linkedin.com/in/timeea-samoila/" target="_blank">See LinkedIn</a>
+        </div>
+        <div class="journey-container">
+          <div class="buttons-container">
+            <button class="button-secondary" id="show-education-btn">See Education</button>
+            <button class="button-secondary" id="show-experience-btn">See Experience</button>
+          </div>
+          <div class="visible" id="education">
+              <div class="journey-1">
+                <p>2023-2024</p>
+                <h3>Le Wagon - Web Development Bootcamp</h3>
+              </div>
+              <div class="journey-2">
+                <p>2022-2023</p>
+                <h3>Kanagawa University - International Business</h3>
+              </div>
+              <div class="journey-3">
+                <p>2020-2023</p>
+                <h3>Lucian Blaga University - Business Administration</h3>
+              </div>
+          </div>
+          <div class="hidden" id="experience">
+              <div class="journey-1">
+                <p>02/2022 - 09/2022</p>
+                <h3>Communication Manager</h3>
+                <p>Erasmus Student Network</p>
+                <ul>
+                  <li>Created engaging content for online platforms like social media, while also coordinating traditional marketing efforts such as print materials, event promotions, and direct mail campaigns</li>
+                  <li>Documented national events and helped students in need</li>
+                </ul>
+              </div>
+              <div class="journey-2">
+                <p>03/2022 - 06/2022</p>
+                <h3>Administration Intern</h3>
+                <p>Matec Cnc Technik</p>
+                <ul>
+                  <li>Learned the attributions, tasks and correlation between multiple departments</li>
+                  <li>Worked on administration and HR tasks with the people in charge </li>
+                </ul>
+              </div>
+              <div class="journey-3">
+                <p>10/2021 - 02/2022</p>
+                <h3>Advertising Sales Agent</h3>
+                <p>Mobiup Distribution</p>
+                <ul>
+                  <li>Promoted mid-range phone services and products through in-store marketing initiatives, including visual merchandising, product displays and promotional events</li>
+                  <li>Operations management for the assigned location</li>
+                </ul>
+              </div>
+              <div class="journey-4">
+                <p>01/2021 - 09/2021</p>
+                <h3>Purchasing Intern</h3>
+                <p>Continental Automotive Products SRL</p>
+                <ul>
+                  <li>Assisted the purchasing department with various tasks, including data entry, market research, and registering materials</li>
+                  <li>Handled the materials registered in the system either from the main manufacturer or from suppliers with SAP</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-about-container">
+        <img class="wave" src="<%= image_path('wave.png') %>" alt="wave">
+        <img class="peace" src="<%= image_path('peace.png') %>" alt="peace">
+        <div class="about-me">
+          <h2>A personal touch</h2>
+          <div class="passions">
+            <div class="hobbies">
+              <h3>Hobbies & Interests</h3>
+                <div class="hobbies-container">
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ihajlcqd.json"
+                        trigger="hover"
+                        colors="primary:#4C214D,secondary:#f2e2d9,tertiary:#ffc738"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Japanese culture</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/fjcesatc.json"
+                        trigger="hover"
+                        colors="primary:#242424,secondary:#320a5c,tertiary:#4C214D"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Video games</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yskcrbda.json"
+                        trigger="hover"
+                        colors="primary:#242424,secondary:#c67d53,tertiary:#e4e4e4,quaternary:#4C214D"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Pets</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xdvsfbna.json"
+                        trigger="hover"
+                        colors="primary:#a866ee,secondary:#f49cc8,tertiary:#ffc738,quaternary:#646e78,quinary:#3a3347"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Dancing</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/egmlnyku.json"
+                        trigger="hover"
+                        colors="primary:#4C214D,secondary:#e3c0ac,tertiary:#4C214D,quaternary:#ebe6ef"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Learning languages</p>
+                  </div>
+                  <div class="icon">
+                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/iikoxwld.json"
+                        trigger="hover"
+                        state="hover-jump-roll"
+                        colors="primary:#4C214D"
+                        style="width:150px;height:150px">
+                    </lord-icon>
+                    <p>Traveling</p>
+                  </div>
+              </div>
+            </div>
+            <div class="languages">
+              <h3>Languages</h3>
+              <div class="languages-container">
+                <div class="language">
+                  <p>Romanian</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 100%"></div>
+                    <span id="progress-percentage">100%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>English</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 100%"></div>
+                    <span id="progress-percentage">100%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>Spanish</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 60%"></div>
+                    <span id="progress-percentage">60%</span>
+                  </div>
+                </div>
+                <div class="language">
+                  <p>Japanese</p>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 40%"></div>
+                    <span id="progress-percentage">40%</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="skills-stacks">
+            <h2>Skills & Stacks</h2>
+            <div class="stack-cards">
+              <%= image_tag "ruby.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "github.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "JS.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sql.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "react.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "stimulus.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "canva.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "html.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "css.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sass.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "figma.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vue.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "git.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "MP.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vs.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "ruby.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "github.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "JS.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sql.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "react.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "stimulus.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "canva.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "html.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "css.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sass.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "figma.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vue.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "git.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "MP.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vs.png", alt: "stack", width: 140, height: 208 %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards" id="cards-projects">
+      <h2>My Projects</h2>
+        <div class="project-cards">
+          <div class="links">
+
+          </div>
+          <div class="card">
+            <img class="tool" src="<%= image_path('tool.png') %>" alt="tool">
+            <a class="link fas fa-link" href="https://toolbnb-mick-clo-131e0f01c31e.herokuapp.com/" target="_blank"></a>
+            <a class="git fab fa-github" href="https://github.com/Mick-clo/ToolBnB" target="_blank"></a>
+            <h3>ToolBnb</h3>
+            <p>Don't we all need sometimes some arts and crafts tools that we will never use again? With ToolBnb, you can rent tools in your area without having to care ever again about storing or buying something you will never use again. Reserve tools or lend them yourself. Reviews later on.</p>
+            <h3>Stacks</h3>
+              <div class="stacks">
+               <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
+              </div>
+          </div>
+          <div class="card">
+            <img class="bone" src="<%= image_path('bone.png') %>" alt="bone">
+            <a class="link fas fa-link" href="https://www.furry-friend.me/" target="_blank"></a>
+            <a class="git fab fa-github" href="https://github.com/Mick-clo/Furry-Friends" target="_blank"></a>
+            <h3>Furry Friend</h3>
+            <p>Imagine charity as a game. Not all pets get the same love at shelters, but we can change that. That's how FurryFriend was born. You adopt a digital pet, that has the same needs as a real one: they need food, healthcare and toys to keep them busy. Everything you buy for your digital pet, goes to your selected shelter.</p>
+            <h3>Stacks</h3>
+              <div class="stacks">
+               <%= image_tag "ruby.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "JS.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sql.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "html.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "css.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "sass.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "figma.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "vue.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
+               <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+      <img class="smiley" src="<%= image_path('smiley.png') %>" alt="smiley">
+      <div class="contact-title">
+        <h2>Get in touch!</h2>
+        <img class="line" src="<%= image_path('line.png') %>" alt="line">
+      </div>
+      <p>Let's connect and create something amazing together. Whether you have a question or just want to say hi, I'd love to hear from you!</p>
+        <div class="contact-container">
+          <form action="mailto:timeeasamoila12@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit" value="Send" class="button-primary">Send</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+
+
+     document.getElementById('show-education-btn').addEventListener('click', function() {
+      document.getElementById('education').classList.add('visible');
+      document.getElementById('education').classList.remove('hidden');
+      document.getElementById('experience').classList.add('hidden');
+      document.getElementById('experience').classList.remove('visible');
+    });
+
+    document.getElementById('show-experience-btn').addEventListener('click', function() {
+      document.getElementById('education').classList.add('hidden');
+      document.getElementById('education').classList.remove('visible');
+      document.getElementById('experience').classList.add('visible');
+      document.getElementById('experience').classList.remove('hidden');
+    });
+
+    const container = document.querySelector('.skills-stacks');
+    const cards = document.querySelector('.stack-cards');
+
+    /* keep track of user's mouse position */
+    let isPressedDown = false;
+    let cursorXSpace;
+    let slideInterval;
+
+    container.addEventListener('mousedown', (e) => {
+      isPressedDown = true;
+      cursorXSpace = e.offsetX - cards.offsetLeft;
+      container.style.cursor = 'grabbing';
+    });
+
+    container.addEventListener('mouseup', () => {
+      container.style.cursor = 'grab';
+    });
+
+    window.addEventListener('mouseup', () => {
+      isPressedDown = false;
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isPressedDown) return;
+      e.preventDefault();
+      cards.style.left = `${e.offsetX - cursorXSpace}px`;
+      boundCards();
+    });
+
+    function boundCards() {
+      const containerRect = container.getBoundingClientRect();
+      const cardsRect = cards.getBoundingClientRect();
+
+       if (parseInt(cards.style.left) > 10) {
+      cards.style.left = '10px';
+      } else if (cardsRect.right < containerRect.right) {
+      cards.style.left = `-${cardsRect.width - containerRect.width}px`;
+      }
+    }
+
+    function startAutoSlide() {
+      slideInterval = setInterval(() => {
+        let currentLeft = parseInt(cards.style.left) || 0;
+        const containerWidth = container.getBoundingClientRect().width;
+        const cardsWidth = cards.getBoundingClientRect().width;
+        const maxLeft = containerWidth - cardsWidth;
+
+        if (currentLeft > maxLeft) {
+          cards.style.left = `${currentLeft - 1}px`;
+        } else {
+          cards.style.left = '10px';
+        }
+      }, 10);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(slideInterval);
+    }
+
+    // Start the auto-slide immediately
+    startAutoSlide();
+
+  </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

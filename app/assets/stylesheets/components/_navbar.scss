@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.container-fluid {
+  display:flex;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+.navbar-brand .navbar-item {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  width: 600px;
+}
+
+.nav-item {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
