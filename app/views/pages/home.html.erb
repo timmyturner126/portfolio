@@ -219,6 +219,24 @@
                <%= image_tag "git.png", alt: "stack", width: 140, height: 208 %>
                <%= image_tag "MP.png", alt: "stack", width: 140, height: 208 %>
                <%= image_tag "vs.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "ruby.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "Rails.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "github.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "JS.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sql.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "react.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "stimulus.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "canva.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "bootstrap.jpg", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "html.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "css.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "sass.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "figma.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vue.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "heroku.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "git.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "MP.png", alt: "stack", width: 140, height: 208 %>
+               <%= image_tag "vs.png", alt: "stack", width: 140, height: 208 %>
             </div>
           </div>
         </div>
@@ -232,6 +250,7 @@
 
           </div>
           <div class="card">
+            <img class="tool" src="<%= image_path('tool.png') %>" alt="tool">
             <a class="link fas fa-link" href="https://toolbnb-mick-clo-131e0f01c31e.herokuapp.com/" target="_blank"></a>
             <a class="git fab fa-github" href="https://github.com/Mick-clo/ToolBnB" target="_blank"></a>
             <h3>ToolBnb</h3>
@@ -253,6 +272,7 @@
               </div>
           </div>
           <div class="card">
+            <img class="bone" src="<%= image_path('bone.png') %>" alt="bone">
             <a class="link fas fa-link" href="https://www.furry-friend.me/" target="_blank"></a>
             <a class="git fab fa-github" href="https://github.com/Mick-clo/Furry-Friends" target="_blank"></a>
             <h3>Furry Friend</h3>
@@ -278,7 +298,11 @@
 
 
     <div class="contact" id="contact">
-      <h2>Get in touch!</h2>
+      <img class="smiley" src="<%= image_path('smiley.png') %>" alt="smiley">
+      <div class="contact-title">
+        <h2>Get in touch!</h2>
+        <img class="line" src="<%= image_path('line.png') %>" alt="line">
+      </div>
       <p>Let's connect and create something amazing together. Whether you have a question or just want to say hi, I'd love to hear from you!</p>
         <div class="contact-container">
           <form action="mailto:timeeasamoila12@gmail.com" method="post" enctype="text/plain">
@@ -288,13 +312,15 @@
             <input type="email" id="email" name="email" required><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" required></textarea><br>
+            <button type="submit" value="Send" class="button-primary">Send</button>
           </form>
-          <button type="submit" value="Send" class="button-primary">Send</button>
       </div>
     </div>
   </div>
 </div>
-    <script>
+  <script>
+
+
      document.getElementById('show-education-btn').addEventListener('click', function() {
       document.getElementById('education').classList.add('visible');
       document.getElementById('education').classList.remove('hidden');
@@ -315,6 +341,7 @@
     /* keep track of user's mouse position */
     let isPressedDown = false;
     let cursorXSpace;
+    let slideInterval;
 
     container.addEventListener('mousedown', (e) => {
       isPressedDown = true;
@@ -348,6 +375,28 @@
       }
     }
 
-    </script>
+    function startAutoSlide() {
+      slideInterval = setInterval(() => {
+        let currentLeft = parseInt(cards.style.left) || 0;
+        const containerWidth = container.getBoundingClientRect().width;
+        const cardsWidth = cards.getBoundingClientRect().width;
+        const maxLeft = containerWidth - cardsWidth;
+
+        if (currentLeft > maxLeft) {
+          cards.style.left = `${currentLeft - 1}px`;
+        } else {
+          cards.style.left = '10px';
+        }
+      }, 10);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(slideInterval);
+    }
+
+    // Start the auto-slide immediately
+    startAutoSlide();
+
+  </script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

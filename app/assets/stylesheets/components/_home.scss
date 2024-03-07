@@ -121,7 +121,7 @@ body{
   a{
     color: #DDD8CB;
     text-decoration: 1px underline;
-
+    z-index: 100;
   }
 }
 
@@ -174,10 +174,11 @@ body{
   margin-left: 0;
   margin-bottom: 50px;
   background-color: #DDD8CB;
-  width: 200vh;
+  width: 202vh;
   padding: 16px;
   padding-left: 224px;
   padding-right: 224px;
+  margin-right: 0;
 
   .first-about-container{
     display: flex;
@@ -229,12 +230,11 @@ body{
 
     .messy{
       position: absolute;
-      top: -53px;
+      top: -29px;
       left: 155px;
-      width: 262px;
-      height: 168px;
+      width: 271px;
+      height: 126px;
       z-index: 0;
-      transform: rotate(15deg);
     }
   }
 
@@ -468,7 +468,7 @@ body{
   top: 140px;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(18, 132px);
+  grid-template-columns: repeat(36, 132px);
   grid-gap: 32px;
   margin: 16px;
   pointer-events: none;
@@ -482,6 +482,7 @@ body{
   margin: 8px;
   margin-bottom: 32px;
   width: 100%;
+  position: relative;
 
   h2{
     font-size: 50px;
@@ -557,7 +558,27 @@ body{
       color: #4C214D;
       text-decoration: none;
     }
-  }
+
+    .tool{
+      position: absolute;
+      top: -46px;
+      left: -34px;
+      width: 120px;
+      height: 120px;
+      z-index: 1;
+      transform: rotate(15deg);
+    }
+
+    .bone{
+      position: absolute;
+      top: 325px;
+      right: 19px;
+      width: 120px;
+      height: 120px;
+      z-index: 1;
+      transform: rotate(15deg);
+    }
+}
 
   .stacks{
     display: grid;
@@ -621,10 +642,12 @@ body{
   width: 200vh;
   background-color: #141414;
   color:#DDD8CB;
+  position: relative;
 
   h2{
     font-size: 50px;
     padding: 16px;
+    padding-bottom: 0;
   }
 
   p{
@@ -639,9 +662,8 @@ body{
 
   .button-primary{
     padding: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
     font-size: 24px;
+    width: 200px;
   }
 
   .contact-container{
@@ -653,6 +675,30 @@ body{
     padding: 16px;
     width: 800px;
     height: 100%;
+
+  }
+
+  .smiley{
+    position: absolute;
+    top: 325px;
+    right: 138px;
+    width: 170px;
+    height: 170px;
+    z-index: 1;
+    transform: rotate(15deg);
+  }
+
+  .contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .line{
+      width: 500px;
+      margin-bottom: 16px;
+    }
 
   }
 }
