@@ -246,9 +246,7 @@
     <div class="cards" id="cards-projects">
       <h2>My Projects</h2>
         <div class="project-cards">
-          <div class="links">
 
-          </div>
           <div class="card">
             <img class="tool" src="<%= image_path('tool.png') %>" alt="tool">
             <a class="link fas fa-link" href="https://toolbnb-mick-clo-131e0f01c31e.herokuapp.com/" target="_blank"></a>
@@ -270,6 +268,7 @@
                <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
                <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
               </div>
+
           </div>
           <div class="card">
             <img class="bone" src="<%= image_path('bone.png') %>" alt="bone">
@@ -292,13 +291,23 @@
                <%= image_tag "heroku.png", alt: "stack", width: 96, height: 142 %>
                <%= image_tag "git.png", alt: "stack", width: 96, height: 142 %>
               </div>
+
           </div>
+          <div class="card-on-dev">
+            <img class="robot" src="<%= image_path('robot.png') %>" alt="robot">
+            <img class="lightbulb" src="<%= image_path('lightbulb.png') %>" alt="light">
+            <h3>LibrAIan</h3>
+            <p>Are you strugling with organizing your folders, bookmarks or findind links you saw at some point and found them useful? Then LibrAIan may be your new friend. This AI tool stores, organizes and filters your links and bookmarks for a more optimised experience. So don't bother with bookmarks and ugly folders, LibrAIan will take care of them for you</p>
+            <h3>On development</h3>
+            <a class="button-primary" href="https://www.figma.com/file/SXijguihteTo5SIrLDhUij/LibrAIan?type=design&mode=design&t=GKPwQrF7d4MU11FI-1" target="_blank">See Prototype</a>
+          </div>
+
         </div>
     </div>
 
 
     <div class="contact" id="contact">
-      <img class="smiley" src="<%= image_path('smiley.png') %>" alt="smiley">
+       <img class="smiley" src="<%= image_path('smiley.png') %>" alt="smiley">
       <div class="contact-title">
         <h2>Get in touch!</h2>
         <img class="line" src="<%= image_path('line.png') %>" alt="line">
@@ -319,7 +328,6 @@
   </div>
 </div>
   <script>
-
 
      document.getElementById('show-education-btn').addEventListener('click', function() {
       document.getElementById('education').classList.add('visible');
@@ -398,5 +406,3 @@
     startAutoSlide();
 
   </script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
