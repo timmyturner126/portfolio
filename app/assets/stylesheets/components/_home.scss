@@ -149,8 +149,8 @@ body{
   position: absolute;
   width: 104vw;
   background-color: #141414;
-  padding-left: 224px;
-  padding-right: 224px;
+  padding-left: 250px;
+  padding-right: 250px;
   padding-bottom: 16px;
   color:#DDD8CB;
   height: 350px;
@@ -180,6 +180,7 @@ body{
   padding: 16px;
   padding-left: 224px;
   padding-right: 224px;
+  overflow: hidden;
 
   .first-about-container{
     display: flex;
@@ -255,7 +256,7 @@ body{
     justify-content: flex-start;
     margin: 16px;
     padding: 16px;
-    padding-left: 24px;
+    padding-left: 26px;
     width: 100%;
     background-color: #4C214D;
     color:#DDD8CB;
@@ -280,7 +281,7 @@ body{
     justify-content: space-evenly;
     margin: 16px;
     padding: 16px;
-    padding-left: 24px;
+    padding-left: 26px;
     width: 100%;
     background-color: #4C214D;
     color:#DDD8CB;
@@ -306,7 +307,7 @@ body{
     margin: 16px;
     padding: 16px;
     width: 100%;
-    padding-left: 24px;
+    padding-left: 26px;
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
@@ -331,7 +332,7 @@ body{
     margin: 16px;
     padding: 16px;
     width: 100%;
-    padding-left: 24px;
+    padding-left: 26px;
     background-color: #4C214D;
     color:#DDD8CB;
     border-radius: 80px;
@@ -509,6 +510,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 16px;
+    margin-bottom: 0;
     padding: 16px;
     width: 100%;
     height: 950px;
@@ -789,3 +791,40 @@ textarea {
   grid-column: 1 / 3;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about,
+.journey-container {
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+}
+
+.about.animate {
+  animation: 1s slideInFromLeft forwards;
+  visibility: visible;
+}
+
+.journey-container.animate {
+  animation: 1s slideInFromRight forwards;
+  visibility: visible;
+}

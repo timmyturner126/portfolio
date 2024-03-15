@@ -405,4 +405,24 @@
     // Start the auto-slide immediately
     startAutoSlide();
 
+    window.addEventListener('scroll', function() {
+    const aboutContainer = document.querySelector('.about');
+    const journeyContainer = document.querySelector('.journey-container');
+
+    const aboutRect = aboutContainer.getBoundingClientRect();
+    const journeyRect = journeyContainer.getBoundingClientRect();
+
+    if (aboutRect.top <= window.innerHeight && aboutRect.bottom >= 0) {
+      aboutContainer.classList.add('animate');
+    } else {
+      aboutContainer.classList.remove('animate');
+    }
+
+    if (journeyRect.top <= window.innerHeight && journeyRect.bottom >= 0) {
+      journeyContainer.classList.add('animate');
+    } else {
+      journeyContainer.classList.remove('animate');
+    }
+  });
+
   </script>
