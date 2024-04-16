@@ -853,6 +853,10 @@ textarea {
     }
   }
 
+  .logo{
+    width: 188px;
+  }
+
   .navbar-content{
     display: flex;
     flex-direction: column;
@@ -900,7 +904,7 @@ textarea {
       letter-spacing: 18px;
       position: absolute;
       z-index: 2;
-      top: -2px;
+      top: 8px;
     }
 
     h2{
@@ -909,7 +913,7 @@ textarea {
       font-size: 32px;
       letter-spacing: 18px;
       position: absolute;
-      top: 88px;
+      top: 96px;
     }
 
     h3{
@@ -927,13 +931,13 @@ textarea {
       font-size: 32px;
       letter-spacing: 18px;
       position: absolute;
-      top: 260px;
+      top: 280px;
     }
 
     .star{
       position: absolute;
-      top: -16px;
-      left: -12px;
+      top: -4px;
+      left: -8px;
       width: 48px;
       height: 64px;
       z-index: 5;
@@ -941,7 +945,7 @@ textarea {
 
     .star1{
       position: absolute;
-      bottom: -32px;
+      bottom: -42px;
       left: 178px;
       width: 48px;
       height: 64px;
@@ -950,9 +954,10 @@ textarea {
 
     .my-picture{
       position: relative;
-      width: 180px;
-      height: 264px;
+      width: 188px;
+      height: 273px;
       z-index: 1;
+      top: 10px;
     }
 
     .picture{
@@ -975,7 +980,8 @@ textarea {
       font-size: 16px;
       position: absolute;
       bottom: 40px;
-      right: -16px;
+      right: -35px;
+      padding-right: 16px;
 
       a{
         color: #DDD8CB;
@@ -994,17 +1000,28 @@ textarea {
     background-color: #141414;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
     color:#DDD8CB;
     height: 350px;
     bottom: -263px;
 
     .description{
-      font-size: 12px;
+      font-size: 16px;
       word-wrap: break-word;
-      width: 300px;
+      width: 316px;
       height: 100px;
       padding: 8px;
+      margin-bottom: 32px;
     }
   }
+
+  .first-about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 8px;
+  }
+
 }
