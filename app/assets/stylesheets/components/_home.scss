@@ -455,6 +455,50 @@ body{
   }
 }
 
+.languages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  padding: 16px;
+  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
+
+  h3{
+    font-size: 40px;
+    padding: 16px;
+  }
+
+  p{
+    font-size: 24px;
+    padding: 8px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .language{
+    margin: 16px;
+  }
+
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+
+}
+
+.progress-bar::after {
+  position: absolute;
+}
+
+.progress{
+  background-color: #4C214D;
+
+}
+
 .skills-stacks{
   overflow: hidden;
   position: relative;
@@ -609,82 +653,73 @@ body{
     }
   }
 
-    .card-on-dev:hover {
-    transform: translateY(-10px); /* Move the element up on hover */
-    box-shadow: 0 10px 20px rgba(0, 0.2, 0, 0.2);
-    }
+.card-on-dev:hover {
+  transform: translateY(-10px); /* Move the element up on hover */
+  box-shadow: 0 10px 20px rgba(0, 0.2, 0, 0.2);
+}
 
-    .robot{
-      position: absolute;
-      top: 1px;
-      right: 465px;
-      width: 120px;
-      height: 120px;
-      z-index: 1;
-      transform: rotate(30deg);
-    }
+.robot{
+  position: absolute;
+  top: 1px;
+  right: 465px;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  transform: rotate(30deg);
+}
 
-    .lightbulb{
-      position: absolute;
-      top: 372px;
-      right: 19px;
-      width: 120px;
-      height: 120px;
-      z-index: 1;
-      transform: rotate(15deg);
-    }
+.lightbulb{
+  position: absolute;
+  top: 372px;
+  right: 19px;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  transform: rotate(15deg);
+}
 
+.stacks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
 
-  .stacks{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-    padding: 16px;
-  }
-
-.languages{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.marketing-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   margin: 16px;
   padding: 16px;
-  height: 100%;
-  padding-top: 0;
-  margin-top: 0;
-
-  h3{
-    font-size: 40px;
-    padding: 16px;
-  }
-
-  p{
-    font-size: 24px;
-    padding: 8px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .language{
-    margin: 16px;
-  }
-
-}
-.progress-bar {
-  position: relative;
   width: 100%;
-  height: 100%;
-  margin: 8px;
 
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    margin-bottom: 0;
+    padding: 16px;
+    width: 450px;
+    height: 450px;
+    background-color: #DDD8CB;
+    color:#141414;
+    border-radius: 80px;
+    position: relative;
+    transform: translateY(0); /* Reset the transform property */
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Move the element up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0.2, 0, 0.2);
+  }
 }
 
-.progress-bar::after {
-  position: absolute;
-}
-
-.progress{
-  background-color: #4C214D;
-
-}
 
 .contact{
   display: flex;
