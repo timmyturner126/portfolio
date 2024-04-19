@@ -686,37 +686,70 @@ body{
 }
 
 .marketing-cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   justify-items: center;
   align-items: center;
   margin: 16px;
   padding: 16px;
-  width: 100%;
+  width: 100wh;
 
   .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin: 16px;
     margin-bottom: 0;
     padding: 16px;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
     background-color: #DDD8CB;
-    color:#141414;
     border-radius: 80px;
     position: relative;
     transform: translateY(0); /* Reset the transform property */
     transition: transform 0.3s;
   }
 
+  .card-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 24px;
+    overflow: hidden;
+    color:#141414;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
   .card:hover {
     transform: translateY(-10px); /* Move the element up on hover */
     box-shadow: 0 10px 20px rgba(0, 0.2, 0, 0.2);
+  }
+
+  h3{
+    font-size: 40px;
+    padding: 8px;
+    margin: 0;
+  }
+
+  p{
+    font-size: 24px;
+    word-wrap: break-word;
+    height: auto;
+    margin: 16px;
+    padding-top: 0;
+    overflow: hidden;
+    width: inherit;
+  }
+
+  .plus{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
   }
 }
 
