@@ -405,7 +405,7 @@
     </div>
   </div>
 </div>
-  <script>
+<script>
 
      document.getElementById('show-education-btn').addEventListener('click', function() {
       document.getElementById('education').classList.add('visible');
@@ -503,4 +503,22 @@
     }
   });
 
-  </script>
+  let currentPopup = null;
+
+  document.querySelectorAll('.plus').forEach(function(plus) {
+    plus.addEventListener('click', function() {
+      if (currentPopup) {
+        currentPopup.style.display = 'none';
+      }
+      currentPopup = this.nextElementSibling;
+      currentPopup.style.display = 'block';
+    });
+  });
+
+  document.addEventListener('click', function(event) {
+    if (currentPopup && event.target != currentPopup && !currentPopup.contains(event.target)) {
+      currentPopup.style.display = 'none';
+      currentPopup = null;
+    }
+  });
+</script>
